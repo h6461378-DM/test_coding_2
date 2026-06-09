@@ -1,0 +1,12 @@
+import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+@pytest.fixture()
+def browser():
+    chrome_browser = webdriver.Chrome()
+    return chrome_browser
+
+def test_button_exists(browser):
+    browser.get("https://www.qa-practice.com/elements/button/simple")
+    return browser.find_element(By.XPATH, "//input[@name='submit']")
