@@ -74,7 +74,7 @@ jobs:
     needs: generate-report
     name: Report publication
     steps:
-      - name: Download all workflow run artifacts
+      - name: Download all workflow run artifacs
         uses: actions/download-artifact@v3
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
