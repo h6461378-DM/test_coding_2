@@ -9,4 +9,4 @@ def browser():
 
 def test_button_exists(browser):
     browser.get("https://www.qa-practice.com/elements/button/simple")
-    return browser.find_element(By.XPATH, "//input[@name='submit']")
+    assert browser.find_element(By.XPATH, "//input[@name='submit']").is_displayed()
