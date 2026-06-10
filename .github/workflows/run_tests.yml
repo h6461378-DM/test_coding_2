@@ -11,6 +11,7 @@ on:
         options:
           - first_test
           - second_test
+          - all
 permissions:
   contents: read
   pages: write
